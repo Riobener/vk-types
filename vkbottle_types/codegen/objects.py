@@ -12731,6 +12731,16 @@ class MessagesMessageAttachment(BaseModel):
     )
     """Property `MessagesMessageAttachment.poll`."""
 
+    video: typing.Optional["VideoVideoFull"] = Field(
+        default=None,
+    )
+    """Property `WallWallpostAttachment.video`."""
+
+    clip: typing.Optional["VideoVideoFull"] = Field(
+        default=None,
+    )
+    """Property `WallWallpostAttachment.clip`."""
+
 
 class MessagesMessageAttachmentType(enum.Enum):
     PHOTO = "photo"
